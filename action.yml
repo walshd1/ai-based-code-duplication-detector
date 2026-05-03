@@ -1,0 +1,19 @@
+name: 'AI-Based Code Duplication Detector'
+description: 'Identifies near-duplicate code snippets that may not be detected by traditional methods due to minor variations.'
+author: 'walshd1'
+branding:
+  icon: 'zap'
+  color: 'blue'
+inputs:
+  gemini_api_key:
+    description: 'Gemini API key (free)'
+    required: false
+  service_token:
+    description: 'Service token (paid)'
+    required: false
+outputs:
+  result:
+    description: 'Result'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
